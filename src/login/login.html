@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
-    <title>Login</title>
+    <title>Spotify Web-player</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="h-screen bg-green">
+    <main class="flex h-full w-full items-center justify-center">
+      <section class="flex flex-col items-center gap-8">
+        <img
+          class="h-[20vh]"
+          src="Spotify_Icon_RGB_Black.png"
+          alt="spotify-logo"
+        />
+        <input
+          type="button"
+          class="h-12 w-64 rounded-md bg-black text-white hover:cursor-pointer"
+          id="login-to-sportify"
+          value="Login to spotify"
+        />
+      </section>
+    </main>
+    <script src="login.js" type="module"></script>
   </body>
 </html>
