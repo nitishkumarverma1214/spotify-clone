@@ -13,8 +13,8 @@
       class="grid-template-areas grid-template grid h-full grid-cols-[250px_1fr] grid-rows-[1fr_auto]"
     >
       <aside class="sidenav">sidenav</aside>
-      <section class="content">
-        <header class="border-2 border-solid px-8 py-4">
+      <article class="content relative overflow-auto bg-transparent">
+        <header class="header bg-transparent px-8 py-4">
           <nav class="relative flex justify-end">
             <button
               id="user-profile-btn"
@@ -52,23 +52,20 @@
             </ul>
           </nav>
         </header>
-        <article class="p-4">
-          <h1 class="text-2xl">Featured</h1>
-          <section
-            class="featured-songs grid grid-cols-auto-fill-cards gap-4"
-            id="featured-playlist-items"
-          >
-            <!-- <section class="rounded border-2 border-solid p-4">
-              <img
-                src="https://i.scdn.co/image/ab67706f000000036caf8c414e0b49f1b5be3e91"
-                alt=""
-              />
-              <h2 class="text-sm">Name</h2>
-              <h3 class="text-xs">description</h3>
-            </section> -->
-          </section>
+        <article
+          id="cover-content"
+          class="absolute top-0 -z-[1] grid h-72 w-full content-center bg-gradient-to-b from-light-black to-black-base px-4"
+        >
+          <h1 class="text-6xl">Hello Nitish</h1>
         </article>
-      </section>
+        <section class="page-content mt-48 bg-black-base">
+          <section id="tracks" class="px-8">
+            <section
+              class="grid grid-cols-[50px_2fr_1fr_50px] items-center justify-start gap-4 rounded-md text-secondary hover:bg-light-black"
+            ></section>
+          </section>
+        </section>
+      </article>
       <footer class="now-playing">now playing</footer>
     </main>
   </body>

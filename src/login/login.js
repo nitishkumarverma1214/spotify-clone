@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", () => {
     const accessToken = localStorage.getItem(ACCESS_TOKEN);
     if (accessToken) {
-      window.location.href = `${APP_URL}dashboard/dashboard.html`;
+      window.location.href = `${APP_URL}/dashboard/dashboard.html`;
     }
     if (window.opener !== null && !window.opener.closed) {
       window.focus();
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (accessToken) {
         window.close();
         setItemInLocalStorage({ accessToken, tokenType, expiresIn });
-        window.opener.location.href = `${APP_URL}dashboard/dashboard.html`;
+        window.opener.location.href = `${APP_URL}/dashboard/dashboard.html`;
       } else {
         window.close();
       }
