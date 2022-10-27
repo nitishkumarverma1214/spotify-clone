@@ -13,5 +13,6 @@ export default defineConfig(({ command, mode }) => {
     build: {
       outDir: "../dist",
     },
+    base: `spotify-clone`,
   };
 });
