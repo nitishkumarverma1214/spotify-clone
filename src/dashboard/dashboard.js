@@ -326,7 +326,6 @@ const fillContentForPlaylist = async (playlistId) => {
 <section id="tracks" class="px-8 text-secondary mt-4"></section>`;
   loadPlaylistTrack(playlist);
 };
-
 const onContentScroll = (event) => {
   const { scrollTop } = event.target;
 
